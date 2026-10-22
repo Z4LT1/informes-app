@@ -39,6 +39,9 @@ BPPJ
         <!-- titulo de la pagina -->
         <title>index</title>
 
+        <!-- icono de la pestaña del navegador -->
+        <link rel="icon" type="image/png" href="imagenes/favicon.png">
+
 </head>
 
 <!-- TITULO BODY -->

@@ -146,6 +146,9 @@
         
         <title>eliminar_informe</title>
 
+        <!-- icono de la pestaña del navegador -->
+        <link rel="icon" type="image/png" href="../../../imagenes/favicon.png">
+
         
 
             

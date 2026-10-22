@@ -1378,6 +1378,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portada</title>
+    <link rel="icon" type="image/png" href="../../../imagenes/favicon.png">
     <link rel="stylesheet" href="../../../css/programa/informes/portada.css">
     <link rel="stylesheet" href="../../../css/programa/informes/portada_vista_cabecera.css">
     <link rel="stylesheet" href="../../../css/programa/informes/portada_vista_indice_lateral.css">
