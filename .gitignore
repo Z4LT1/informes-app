@@ -14,3 +14,9 @@ desktop.ini
 .vscode/
 .idea/
 .claude/
+
+# Paquete para subir al hosting
+*.zip
+
+# Config del hosting con credenciales (no subir a GitHub)
+deploy/

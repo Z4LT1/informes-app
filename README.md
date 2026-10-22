@@ -13,7 +13,9 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![XAMPP](https://img.shields.io/badge/XAMPP-FB7A24?style=for-the-badge&logo=xampp&logoColor=white)
 
-[Demo en vivo](#) · [Capturas](#-capturas) · [Instalación](#-instalación-local)
+**[🌐 Demo en vivo](https://informes-app.infinityfreeapp.com/)** · [Capturas](#-capturas) · [Instalación](#-instalación-local)
+
+<sub>Usuario: <code>demo</code> · Contraseña: <code>demo1234</code></sub>
 
 </div>
 
@@ -51,13 +53,13 @@
 
 ## 📸 Capturas
 
-<!-- Reemplaza las rutas por tus capturas (sugerencia: carpeta docs/capturas/) -->
-
-| Login | Panel | Editor de informe |
-|:---:|:---:|:---:|
-| ![Login](docs/capturas/login.png) | ![Panel](docs/capturas/panel.png) | ![Portada](docs/capturas/portada.png) |
-
-<!-- Opcional: un GIF corto del flujo completo -->
+| Inicio de sesión | Panel principal |
+|:---:|:---:|
+| ![Inicio de sesión](docs/capturas/login.png) | ![Panel principal](docs/capturas/panel.png) |
+| **Buscar informes** | **Portada del informe** |
+| ![Buscar informes](docs/capturas/mis_informes.png) | ![Portada del informe](docs/capturas/portada.png) |
+| **Edición por secciones** | **Vista de exportación** |
+| ![Edición por secciones](docs/capturas/introduccion.png) | ![Vista de exportación](docs/capturas/exportacion.png) |
 
 ## ✨ Funcionalidades
 
@@ -200,9 +202,9 @@ erDiagram
 
 ### Credenciales de prueba
 
-| Usuario | Contraseña |
-|---|---|
-| | |
+| Demo | Usuario | Contraseña |
+|---|---|---|
+| [informes-app.infinityfreeapp.com](https://informes-app.infinityfreeapp.com/) | `demo` | `demo1234` |
 
 ## 🔐 Seguridad
 
