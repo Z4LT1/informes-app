@@ -27,15 +27,16 @@ Generador web de informes técnicos de proyectos, con edición por secciones, í
 - [Contexto: práctica profesional](#-contexto-práctica-profesional)
 - [Capturas](#-capturas)
 - [Funcionalidades](#-funcionalidades)
-- [¿Cómo funciona?](#-cómo-funciona)
-- [Stack tecnológico](#-stack-tecnológico)
+- [¿Cómo funciona?](#️-cómo-funciona)
+- [Stack tecnológico](#️-stack-tecnológico)
 - [Arquitectura y modularidad](#-arquitectura-y-modularidad)
-- [Estructura del proyecto](#-estructura-del-proyecto)
+- [Estructura del proyecto](#️-estructura-del-proyecto)
 - [Estándar de escritura de código](#-estándar-de-escritura-de-código)
-- [Base de datos](#-base-de-datos)
+- [Base de datos](#️-base-de-datos)
 - [Instalación local](#-instalación-local)
 - [Despliegue](#-despliegue)
 - [Seguridad](#-seguridad)
+- [Vulnerabilidad PHP 2026 (extra)](#️-vulnerabilidad-php-2026-php2shell-extra)
 - [Aprendizajes](#-aprendizajes)
 - [Mejoras futuras](#-mejoras-futuras)
 - [Autor](#-autor)
@@ -215,7 +216,7 @@ erDiagram
 
 ### Requisitos
 
-- [XAMPP](https://www.apachefriends.org/) con PHP 8.2.35 o superior (ver [Seguridad](#-seguridad)).
+- [XAMPP](https://www.apachefriends.org/) con PHP 8.2.35 o superior (ver [Vulnerabilidad PHP 2026](#️-vulnerabilidad-php-2026-php2shell-extra)).
 - Git, o descargar el proyecto como `.zip` desde GitHub.
 
 ### Pasos
@@ -249,8 +250,6 @@ La demo está publicada en **InfinityFree**, un hosting gratuito con PHP y MySQL
 
 ## 🔐 Seguridad
 
-### Buenas prácticas implementadas
-
 - **Consultas preparadas** (`mysqli::prepare` + `bind_param`) en todas las operaciones con la base de datos, para prevenir inyección SQL.
 - **Contraseñas cifradas** con `password_hash` y verificadas con `password_verify`. Si el algoritmo cambia, el hash se actualiza solo al iniciar sesión, y las contraseñas antiguas en texto plano se migran automáticamente.
 - **Sesiones seguras**: el identificador se regenera al iniciar sesión (`session_regenerate_id`) para evitar la fijación de sesión, y todas las páginas internas exigen una sesión válida.
@@ -259,7 +258,9 @@ La demo está publicada en **InfinityFree**, un hosting gratuito con PHP y MySQL
 - **Validación de archivos subidos**: solo se aceptan extensiones de imagen, con un máximo de 10 MB, y se guardan con un nombre aleatorio generado por el servidor.
 - **Credenciales fuera del repositorio**: la configuración de conexión se separa en un archivo ignorado por git, y la carpeta `bd/` está protegida con `.htaccess`.
 
-### Caso de estudio: PHP2Shell (CVE-2026-109618 / CVE-2026-109619)
+## ⚠️ Vulnerabilidad PHP 2026: PHP2Shell (extra)
+
+> Sección complementaria: analiza una vulnerabilidad del propio lenguaje PHP publicada en octubre de 2026 (CVE-2026-109618 / CVE-2026-109619) y cómo podría afectar a este proyecto.
 
 En octubre de 2026 se publicaron dos vulnerabilidades críticas **en el propio intérprete de PHP**, conocidas como **PHP2Shell** (CVSS v4: 9.2). Permiten **ejecución remota de código sin autenticación** y afectan a prácticamente todas las versiones desde PHP 5.4 hasta 8.5. Se corrigieron el 21 de octubre de 2026.
 
@@ -268,7 +269,7 @@ En octubre de 2026 se publicaron dos vulnerabilidades críticas **en el propio i
 | CVE-2026-109618 | Corrupción de memoria al quedarse sin memoria (OOM) | Una petición, por ejemplo un formulario `multipart` manipulado, agota la memoria mientras PHP prepara la petición, y la limpieza posterior usa datos a medio inicializar. |
 | CVE-2026-109619 | *Use-after-free* por estado que queda entre peticiones | Un error fatal deja estado interno apuntando a memoria liberada, y una petición posterior al mismo proceso la reutiliza, por ejemplo a través del seguimiento de progreso de subida de sesiones. |
 
-#### ¿Cómo podría verse afectado este proyecto?
+### ¿Cómo podría verse afectado este proyecto?
 
 - **La falla está en PHP, no en el código de la aplicación.** Con Apache + `mod_php`, el modo que usa XAMPP y el de mayor riesgo según el equipo de PHP, el ataque puede ocurrir **antes de que se ejecute cualquier línea de la app**. Ni las consultas preparadas ni la validación de formularios lo evitan.
 - **El entorno local es vulnerable.** XAMPP trae PHP 8.2.12, anterior a la versión corregida 8.2.35. Apache escucha por defecto en todas las interfaces (`Listen 80`), así que otro equipo de la misma red podría alcanzarlo.
@@ -278,7 +279,7 @@ En octubre de 2026 se publicaron dos vulnerabilidades críticas **en el propio i
   - **Una cuenta demo pública**, que da acceso a todos los formularios de subida.
 - **Impacto posible:** un atacante podría ejecutar código con los permisos del servidor web y, con eso, leer `php/config/config.php` (credenciales de la base de datos), modificar o borrar informes, o usar el servidor para otros ataques.
 
-#### Mitigación
+### Mitigación
 
 1. **Actualizar PHP**, la única solución completa: 8.2.35, 8.3.36, 8.4.27 o 8.5.12 o superior. En el hosting compartido, confirmar con el proveedor que ya aplicó el parche.
 2. **Medidas temporales** en `php.ini` o en la configuración del servidor (no en `ini_set()` ni en `.user.ini`, que llegan tarde), reiniciando Apache después:
@@ -316,7 +317,7 @@ En octubre de 2026 se publicaron dos vulnerabilidades críticas **en el propio i
 **Roberto Sebastián Sepúlveda Quintana**: Analista Programador
 
 [![GitHub](https://img.shields.io/badge/GitHub-Z4LT1-181717?style=flat&logo=github)](https://github.com/Z4LT1)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/TU_PERFIL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-robertosepulvedaq-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/robertosepulvedaq)
 
 ## 📄 Créditos y licencia
 
