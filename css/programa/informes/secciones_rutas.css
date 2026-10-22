@@ -1,0 +1,377 @@
+.seccion_ruta_fila_seccion{
+    align-items: start;
+}
+
+.seccion_ruta_bloque_completo{
+    width: 100%;
+    max-width: 216mm;
+    margin: 0 auto;
+}
+
+.seccion_ruta_titulo_documento{
+    margin: 0 0 12px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.15;
+}
+
+.seccion_ruta_documento{
+    width: 100%;
+    max-width: 216mm;
+    min-height: 260mm;
+    margin: 0 auto;
+    padding: 12mm 18mm 18mm 18mm;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion_ruta_formulario{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100%;
+}
+
+.seccion_ruta_documento_encabezado{
+    margin-bottom: 4mm;
+}
+
+.seccion_ruta_logo_superior{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.seccion_ruta_logo_imagen{
+    width: 58mm;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.seccion_ruta_bloque_jerarquia{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.seccion_ruta_jerarquia_item{
+    display: grid;
+    grid-template-columns: 120px 90px minmax(0, 1fr);
+    gap: 10px;
+    align-items: end;
+}
+
+.seccion_ruta_campo{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.seccion_ruta_etiqueta{
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.seccion_ruta_input{
+    width: 100%;
+    height: 28px;
+    padding: 0 8px;
+    border: 2px solid #111111;
+    background: #ffffff;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+.seccion_ruta_input[readonly]{
+    background: #f2f2f2;
+    color: #333333;
+}
+
+.seccion_ruta_panel_superior{
+    display: block;
+    align-items: start;
+    margin-bottom: 8px;
+}
+
+.seccion_ruta_panel_info{
+    border: 1px solid #111111;
+    padding: 7px 8px;
+    background: #ffffff;
+}
+
+.seccion_ruta_panel_info_titulo{
+    margin: 0 0 4px 0;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.seccion_ruta_panel_info_texto{
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+.seccion_ruta_bloque_campo_principal{
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 8px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.seccion_ruta_texto_apoyo{
+    margin: 0;
+    font-size: 11px;
+    color: #333333;
+}
+
+.seccion_ruta_checkbox_linea{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.seccion_ruta_checkbox_linea input{
+    width: 18px;
+    height: 18px;
+    accent-color: #8f2b82;
+}
+
+.seccion_ruta_botonera_principal{
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.seccion_ruta_fila_bloques{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.seccion_ruta_bloque_simple{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: stretch;
+}
+
+.seccion_ruta_botones_stack{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: flex-end;
+}
+
+.seccion_ruta_fila_ruta_extra{
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: center;
+}
+
+.seccion_ruta_campos_ruta_extra{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+}
+
+.seccion_ruta_boton_add{
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 2px solid #111111;
+    background: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.seccion_ruta_botones_footer{
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.seccion_ruta_boton{
+    min-width: 78px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid #2b1732;
+    background: #a03b8d;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.seccion_ruta_boton.secundario{
+    background: #8c2f79;
+}
+
+.seccion_ruta_nota{
+    margin: 12px 0 0 0;
+    font-size: 10px;
+    line-height: 1.45;
+    color: #555555;
+}
+
+.seccion_ruta_documento_footer{
+    margin-top: auto;
+    padding-top: 8mm;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #cccccc;
+}
+
+.seccion_ruta_documento_footer_logo{
+    flex-shrink: 0;
+}
+
+.seccion_ruta_documento_footer_logo_imagen{
+    width: 42px;
+    height: auto;
+    display: block;
+}
+
+.seccion_ruta_documento_footer_texto{
+    flex: 1;
+    font-size: 8px;
+    line-height: 1.45;
+    color: #5a5a5a;
+}
+
+.seccion_ruta_documento_footer_numero{
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.seccion_ruta_columna_preview{
+    padding-top: 0;
+}
+
+.seccion_ruta_preview_documento{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion_ruta_preview_logo_superior{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+}
+
+.seccion_ruta_preview_logo_imagen{
+    width: 88px;
+    max-width: 100%;
+    height: auto;
+}
+
+.seccion_ruta_preview_titulo{
+    display: flex;
+    gap: 3px;
+    margin-bottom: 7px;
+    font-size: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.seccion_ruta_preview_nivel_1{
+    justify-content: center;
+    text-align: center;
+}
+
+.seccion_ruta_preview_nivel_2{
+    justify-content: flex-start;
+}
+
+.seccion_ruta_preview_nivel_3{
+    justify-content: flex-start;
+}
+
+.seccion_ruta_preview_titulo_numero{
+    flex-shrink: 0;
+}
+
+.seccion_ruta_preview_contenido{
+    margin: 8px 0 0 0;
+    font-size: 5.5px;
+    line-height: 1.45;
+    color: #111111;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.seccion_ruta_preview_footer{
+    margin-top: auto;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.seccion_ruta_preview_footer_logo{
+    flex-shrink: 0;
+}
+
+.seccion_ruta_preview_footer_logo_imagen{
+    width: 24px;
+    height: auto;
+}
+
+.seccion_ruta_preview_footer_texto{
+    flex: 1;
+    font-size: 4px;
+    line-height: 1.35;
+    color: #6a6a6a;
+    text-align: left;
+}
+
+.seccion_ruta_preview_footer_numero{
+    flex-shrink: 0;
+    font-size: 6px;
+    font-weight: 700;
+    color: #222222;
+}
+
+@media (max-width: 1120px){
+    .seccion_ruta_jerarquia_item,
+    .seccion_ruta_bloque_campo_principal{
+        grid-template-columns: 1fr;
+    }
+
+    .seccion_ruta_fila_bloques{
+        grid-template-columns: 1fr;
+    }
+
+    .seccion_ruta_fila_ruta_extra{
+        grid-template-columns: 1fr;
+    }
+
+    .seccion_ruta_campos_ruta_extra{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,98 @@
+
+
+
+
+
+
+
+.portada_columna_indice{
+    position: sticky;
+    top: 56px;
+    align-self: start;
+    width: 250px;
+    max-width: 250px;
+    grid-column: 1;
+    z-index: 2;
+}
+
+.portada_indice_scroll{
+    width: 100%;
+    max-height: calc(100vh - 62px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 6px;
+    box-sizing: border-box;
+}
+
+.portada_indice_panel{
+    min-height: 760px;
+    padding: 14px 10px 18px 10px;
+    background: #f7f7f7;
+    border: 2px solid #1b1b1b;
+    box-sizing: border-box;
+}
+
+.portada_indice_lateral_fila{
+    margin-bottom: 6px;
+    font-size: 11px;
+    line-height: 1.35;
+}
+
+.portada_indice_lateral_nivel_0,
+.portada_indice_lateral_nivel_1{
+    padding-left: 0;
+}
+
+.portada_indice_lateral_nivel_2{ padding-left: 12px; }
+.portada_indice_lateral_nivel_3{ padding-left: 24px; }
+.portada_indice_lateral_nivel_4{ padding-left: 36px; }
+.portada_indice_lateral_nivel_5{ padding-left: 48px; }
+.portada_indice_lateral_nivel_6{ padding-left: 60px; }
+.portada_indice_lateral_nivel_7{ padding-left: 72px; }
+.portada_indice_lateral_nivel_8{ padding-left: 84px; }
+.portada_indice_lateral_nivel_9{ padding-left: 96px; }
+.portada_indice_lateral_nivel_10{ padding-left: 108px; }
+.portada_indice_lateral_nivel_11{ padding-left: 120px; }
+.portada_indice_lateral_nivel_12{ padding-left: 132px; }
+.portada_indice_lateral_nivel_13{ padding-left: 144px; }
+.portada_indice_lateral_nivel_14{ padding-left: 156px; }
+.portada_indice_lateral_nivel_15{ padding-left: 168px; }
+.portada_indice_lateral_nivel_16{ padding-left: 180px; }
+.portada_indice_lateral_nivel_17{ padding-left: 192px; }
+.portada_indice_lateral_nivel_18{ padding-left: 204px; }
+.portada_indice_lateral_nivel_19{ padding-left: 216px; }
+.portada_indice_lateral_nivel_20{ padding-left: 228px; }
+
+.portada_indice_lateral_enlace,
+.portada_indice_lateral_contenido{
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    color: #111111;
+    text-decoration: none;
+}
+
+.portada_indice_lateral_enlace:hover{
+    color: #8f2f7d;
+}
+
+.portada_indice_lateral_texto{
+    white-space: normal;
+    word-break: break-word;
+}
+
+.portada_indice_lateral_puntos{
+    flex: 1;
+    min-width: 12px;
+    border-bottom: 1px dotted #555555;
+    transform: translateY(-1px);
+}
+
+.portada_indice_lateral_pagina{
+    min-width: 12px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+
+

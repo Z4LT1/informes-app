@@ -1,0 +1,79 @@
+
+
+
+
+
+
+
+
+    body{
+        margin: 0; 
+        font-family: Arial, sans-serif; 
+    }
+
+
+
+
+    .eliminar_informe_contenedor_principal{
+        width: 100%; 
+        max-width: 600px; 
+        margin: 40px auto; 
+        padding: 20px; 
+        box-sizing: border-box; 
+    }
+
+
+
+
+    .eliminar_informe_contenido{
+        border: 1px solid #cccccc; 
+        padding: 20px; 
+        box-sizing: border-box; 
+        text-align: center; 
+    }
+
+
+
+
+    .eliminar_informe_titulo{
+        margin: 0 0 15px 0; 
+    }
+
+
+
+
+    .eliminar_informe_mensaje{
+        margin: 0 0 15px 0; 
+    }
+
+
+
+
+    .eliminar_informe_nombre{
+        margin: 0 0 20px 0; 
+        font-weight: bold; 
+    }
+
+
+
+
+    .eliminar_informe_formulario{
+        margin-bottom: 15px; 
+    }
+
+    .eliminar_informe_boton{
+        padding: 10px 20px; 
+        cursor: pointer; 
+    }
+
+
+
+
+    
+
+
+
+
+
+
+

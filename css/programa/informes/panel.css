@@ -1,0 +1,338 @@
+
+
+
+
+
+
+
+
+    body{
+        margin: 0; 
+        background: #ececec; 
+        font-family: Arial, Helvetica, sans-serif; 
+    }
+
+
+
+
+    .panel_contenedor_principal{
+        width: calc(100% - 16px); 
+        max-width: 1200px; 
+        min-height: 680px; 
+        margin: 14px auto; 
+        padding: 0; 
+        box-sizing: border-box; 
+        border: 2px solid #000000; 
+        background: #ececec; 
+        position: relative; 
+    }
+
+
+
+
+    .panel_cabecera_superior{
+        width: 100%; 
+        padding: 14px 18px 0 18px; 
+        box-sizing: border-box; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: flex-start; 
+        gap: 16px; 
+        flex-wrap: wrap; 
+    }
+
+
+
+
+    .panel_cabecera_izquierda{
+        display: flex; 
+        align-items: center; 
+        gap: 14px; 
+        flex-wrap: wrap; 
+    }
+
+
+
+
+    .panel_cabecera_derecha{
+        display: flex; 
+        align-items: center; 
+        gap: 14px; 
+        flex-wrap: wrap; 
+        justify-content: flex-end; 
+        margin-left: auto; 
+    }
+
+
+
+
+    .panel_flechas{
+        display: flex; 
+        align-items: center; 
+        gap: 0; 
+    }
+
+    .panel_flecha{
+        width: 28px; 
+        height: 28px; 
+        display: inline-flex; 
+        align-items: center; 
+        justify-content: center; 
+        background: #a33b8d; 
+        color: #ffffff; 
+        text-decoration: none; 
+        font-size: 18px; 
+        font-weight: 700; 
+        line-height: 1; 
+        border-top: 1px solid #000000; 
+        border-bottom: 1px solid #000000; 
+    }
+
+    .panel_flecha:first-child{
+        border-left: 1px solid #000000; 
+        border-right: 0; 
+        border-radius: 16px 0 0 16px; 
+    }
+
+    .panel_flecha:last-child{
+        border-left: 1px solid #000000; 
+        border-right: 1px solid #000000; 
+        border-radius: 0 16px 16px 0; 
+    }
+
+
+
+
+    .panel_boton_cabecera,
+    .panel_boton_cerrar_sesion,
+    .panel_boton_principal{
+        display: inline-flex; 
+        align-items: center; 
+        justify-content: center; 
+        min-height: 30px; 
+        padding: 0 16px; 
+        box-sizing: border-box; 
+        border: 1px solid #000000; 
+        border-radius: 8px; 
+        background: #a33b8d; 
+        color: #ffffff; 
+        font-size: 11px; 
+        font-weight: 700; 
+        text-decoration: none; 
+        cursor: pointer; 
+        text-transform: uppercase; 
+    }
+
+    .panel_boton_cabecera_activo{
+        background: #8f2f79; 
+    }
+
+
+
+
+    .panel_usuario{
+        margin: 0; 
+        color: #a33b8d; 
+        font-size: 13px; 
+        font-weight: 700; 
+        text-transform: uppercase; 
+    }
+
+    .panel_usuario_nombre{
+        color: #a33b8d; 
+    }
+
+
+
+
+    .panel_contenido{
+        width: 100%; 
+        min-height: 610px; 
+        padding: 0 20px 24px 20px; 
+        box-sizing: border-box; 
+        position: relative; 
+    }
+
+
+
+
+    .panel_mensaje{
+        margin: 14px 0 0 0; 
+        text-align: center; 
+        font-size: 13px; 
+        font-weight: 700; 
+    }
+
+    .panel_mensaje_error{
+        color: #b00020; 
+    }
+
+
+
+
+    .panel_bloque_central{
+        width: 100%; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: flex-start; 
+        padding-top: 90px; 
+        box-sizing: border-box; 
+    }
+
+
+
+
+    .panel_titulo_principal{
+        margin: 0 0 70px 0; 
+        color: #a33b8d; 
+        font-size: 34px; 
+        font-weight: 700; 
+        text-align: center; 
+        text-transform: uppercase; 
+    }
+
+
+
+
+    .panel_formulario_principal{
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 12px; 
+        flex-wrap: wrap; 
+    }
+
+
+
+
+    .panel_etiqueta_principal{
+        color: #000000; 
+        font-size: 13px; 
+        font-weight: 700; 
+        text-transform: uppercase; 
+    }
+
+
+
+
+    .panel_input_principal{
+        width: 146px; 
+        height: 20px; 
+        padding: 0 8px; 
+        box-sizing: border-box; 
+        border: 2px solid #4b4b4b; 
+        background: #efefef; 
+        color: #444444; 
+        font-size: 12px; 
+        outline: none; 
+    }
+
+    .panel_input_principal::placeholder{
+        color: #777777; 
+    }
+
+
+
+
+    .panel_boton_principal{
+        min-width: 90px; 
+        min-height: 30px; 
+        border-radius: 10px; 
+    }
+
+    .panel_boton_principal_buscar{
+        min-width: 42px; 
+        padding: 0 10px; 
+        font-size: 18px; 
+        line-height: 1; 
+    }
+
+
+
+
+    .panel_logo_inferior{
+        width: 100%; 
+        display: flex; 
+        justify-content: flex-end; 
+        align-items: flex-end; 
+        padding: 0 8px 6px 0; 
+        box-sizing: border-box; 
+        position: absolute; 
+        right: 0; 
+        bottom: 0; 
+    }
+
+
+
+
+    .panel_logo_imagen{
+        width: 170px; 
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
+    }
+
+
+
+
+    @media (max-width: 900px){
+
+        .panel_cabecera_superior{
+            flex-direction: column; 
+            align-items: flex-start; 
+        }
+
+        .panel_cabecera_derecha{
+            margin-left: 0; 
+            justify-content: flex-start; 
+        }
+
+        .panel_bloque_central{
+            padding-top: 70px; 
+        }
+
+    }
+
+
+
+
+    @media (max-width: 600px){
+
+        .panel_contenedor_principal{
+            width: calc(100% - 10px); 
+            min-height: auto; 
+        }
+
+        .panel_titulo_principal{
+            font-size: 28px; 
+            margin-bottom: 40px; 
+        }
+
+        .panel_formulario_principal{
+            flex-direction: column; 
+            gap: 10px; 
+        }
+
+        .panel_logo_inferior{
+            position: static; 
+            justify-content: center; 
+            padding-top: 60px; 
+        }
+
+        .panel_logo_imagen{
+            width: 140px; 
+        }
+
+        .panel_contenido{
+            min-height: auto; 
+            padding-bottom: 24px; 
+        }
+
+    }
+
+
+
+
+
+

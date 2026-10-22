@@ -1,0 +1,273 @@
+
+
+
+
+
+
+
+.portada_fila_seccion_indice{
+    align-items: start;
+}
+
+.portada_bloque_indice_completo{
+    width: 100%;
+    max-width: 216mm;
+    margin: 0 auto;
+}
+
+.portada_titulo_indice_documento{
+    margin: 0 0 12px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.portada_documento_indice{
+    width: 100%;
+    max-width: 216mm;
+    min-height: 240mm;
+    padding: 12mm 18mm 18mm 18mm;
+    background: #f8f8f8;
+    border: 2px solid #6f6f6f;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.portada_documento_indice_logo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-height: 0;
+    margin-bottom: 2mm;
+}
+
+.portada_documento_indice_logo_imagen{
+    width: 58mm;
+    height: auto;
+    display: block;
+}
+
+.portada_documento_indice_titulo{
+    margin: 0 0 6mm 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.portada_documento_indice_listado{
+    width: 100%;
+    flex: 1;
+}
+
+.portada_documento_indice_fila{
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.portada_documento_indice_nivel_0,
+.portada_documento_indice_nivel_1{
+    padding-left: 0;
+}
+
+
+.portada_documento_indice_nivel_2{ padding-left: 12px; }
+.portada_documento_indice_nivel_3{ padding-left: 24px; }
+.portada_documento_indice_nivel_4{ padding-left: 36px; }
+.portada_documento_indice_nivel_5{ padding-left: 48px; }
+.portada_documento_indice_nivel_6{ padding-left: 60px; }
+.portada_documento_indice_nivel_7{ padding-left: 72px; }
+.portada_documento_indice_nivel_8{ padding-left: 84px; }
+.portada_documento_indice_nivel_9{ padding-left: 96px; }
+.portada_documento_indice_nivel_10{ padding-left: 108px; }
+.portada_documento_indice_nivel_11{ padding-left: 120px; }
+.portada_documento_indice_nivel_12{ padding-left: 132px; }
+.portada_documento_indice_nivel_13{ padding-left: 144px; }
+.portada_documento_indice_nivel_14{ padding-left: 156px; }
+.portada_documento_indice_nivel_15{ padding-left: 168px; }
+.portada_documento_indice_nivel_16{ padding-left: 180px; }
+.portada_documento_indice_nivel_17{ padding-left: 192px; }
+.portada_documento_indice_nivel_18{ padding-left: 204px; }
+.portada_documento_indice_nivel_19{ padding-left: 216px; }
+.portada_documento_indice_nivel_20{ padding-left: 228px; }
+
+.portada_documento_indice_texto{
+    white-space: normal;
+    word-break: break-word;
+}
+
+.portada_documento_indice_puntos{
+    flex: 1;
+    border-bottom: 1px dotted #575757;
+    transform: translateY(-2px);
+}
+
+.portada_documento_indice_pagina{
+    min-width: 18px;
+    text-align: right;
+}
+
+.portada_documento_indice_footer{
+    margin-top: auto;
+    padding-top: 8mm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.portada_documento_indice_footer_logo{
+    flex-shrink: 0;
+}
+
+.portada_documento_indice_footer_logo_imagen{
+    width: 42px;
+    height: auto;
+    display: block;
+}
+
+.portada_documento_indice_footer_texto{
+    flex: 1;
+    font-size: 8px;
+    line-height: 1.45;
+    color: #5a5a5a;
+    text-align: left;
+}
+
+.portada_documento_indice_footer_numero{
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    text-align: right;
+}
+
+
+
+.portada_columna_preview_indice{
+    padding-top: 0;
+}
+
+.portada_preview_logo_derecha_indice{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-height: 34px;
+    margin-bottom: 10px;
+}
+
+.portada_preview_documento_indice{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portada_preview_indice_titulo{
+    margin: 0 0 8px 0;
+    text-align: center;
+    font-size: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.portada_preview_indice_listado{
+    width: 100%;
+    min-height: 140px;
+}
+
+.portada_preview_indice_fila{
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    margin-bottom: 2px;
+    font-size: 4.5px;
+    line-height: 1.2;
+}
+
+.portada_preview_indice_nivel_0,
+.portada_preview_indice_nivel_1{
+    padding-left: 0;
+}
+
+
+.portada_preview_indice_nivel_2{ padding-left: 6px; }
+.portada_preview_indice_nivel_3{ padding-left: 12px; }
+.portada_preview_indice_nivel_4{ padding-left: 18px; }
+.portada_preview_indice_nivel_5{ padding-left: 24px; }
+.portada_preview_indice_nivel_6{ padding-left: 30px; }
+.portada_preview_indice_nivel_7{ padding-left: 36px; }
+.portada_preview_indice_nivel_8{ padding-left: 42px; }
+.portada_preview_indice_nivel_9{ padding-left: 48px; }
+.portada_preview_indice_nivel_10{ padding-left: 54px; }
+.portada_preview_indice_nivel_11{ padding-left: 60px; }
+.portada_preview_indice_nivel_12{ padding-left: 66px; }
+.portada_preview_indice_nivel_13{ padding-left: 72px; }
+.portada_preview_indice_nivel_14{ padding-left: 78px; }
+.portada_preview_indice_nivel_15{ padding-left: 84px; }
+.portada_preview_indice_nivel_16{ padding-left: 90px; }
+.portada_preview_indice_nivel_17{ padding-left: 96px; }
+.portada_preview_indice_nivel_18{ padding-left: 102px; }
+.portada_preview_indice_nivel_19{ padding-left: 108px; }
+.portada_preview_indice_nivel_20{ padding-left: 114px; }
+
+.portada_preview_indice_texto{
+    white-space: nowrap;
+}
+
+.portada_preview_indice_puntos{
+    flex: 1;
+    border-bottom: 1px dotted #555555;
+    transform: translateY(-1px);
+}
+
+.portada_preview_indice_pagina{
+    min-width: 8px;
+    text-align: right;
+}
+
+.portada_preview_indice_footer{
+    margin-top: auto;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.portada_preview_indice_footer_logo{
+    flex-shrink: 0;
+}
+
+.portada_preview_indice_footer_logo_imagen{
+    width: 24px;
+    height: auto;
+    display: block;
+}
+
+.portada_preview_indice_footer_texto{
+    flex: 1;
+    font-size: 3px;
+    line-height: 1.35;
+    color: #6a6a6a;
+    text-align: left;
+}
+
+.portada_preview_indice_footer_numero{
+    flex-shrink: 0;
+    margin-top: 0;
+    text-align: right;
+    font-size: 6px;
+    font-weight: 700;
+    color: #222222;
+}
+
+
+

@@ -1,0 +1,431 @@
+
+
+
+
+
+
+
+
+    body{
+        margin: 0; 
+        background: #ececec; 
+        font-family: Arial, Helvetica, sans-serif; 
+    }
+
+
+
+
+    .mis_informes_contenedor_principal{
+        width: calc(100% - 16px); 
+        max-width: 1200px; 
+        min-height: 680px; 
+        margin: 14px auto; 
+        padding: 0; 
+        box-sizing: border-box; 
+        border: 2px solid #000000; 
+        background: #ececec; 
+        position: relative; 
+    }
+
+
+
+
+    .mis_informes_cabecera_superior{
+        width: 100%; 
+        padding: 14px 18px 0 18px; 
+        box-sizing: border-box; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: flex-start; 
+        gap: 16px; 
+        flex-wrap: wrap; 
+    }
+
+
+
+
+    .mis_informes_cabecera_izquierda{
+        display: flex; 
+        align-items: center; 
+        gap: 14px; 
+        flex-wrap: wrap; 
+    }
+
+
+
+
+    .mis_informes_cabecera_derecha{
+        display: flex; 
+        align-items: center; 
+        gap: 14px; 
+        flex-wrap: wrap; 
+        justify-content: flex-end; 
+        margin-left: auto; 
+    }
+
+
+
+
+    .mis_informes_flechas{
+        display: flex; 
+        align-items: center; 
+        gap: 0; 
+    }
+
+    .mis_informes_flecha{
+        width: 28px; 
+        height: 28px; 
+        display: inline-flex; 
+        align-items: center; 
+        justify-content: center; 
+        background: #a33b8d; 
+        color: #ffffff; 
+        text-decoration: none; 
+        font-size: 18px; 
+        font-weight: 700; 
+        line-height: 1; 
+        border-top: 1px solid #000000; 
+        border-bottom: 1px solid #000000; 
+    }
+
+    .mis_informes_flecha:first-child{
+        border-left: 1px solid #000000; 
+        border-right: 0; 
+        border-radius: 16px 0 0 16px; 
+    }
+
+    .mis_informes_flecha:last-child{
+        border-left: 1px solid #000000; 
+        border-right: 1px solid #000000; 
+        border-radius: 0 16px 16px 0; 
+    }
+
+
+
+
+    .mis_informes_boton_cabecera,
+    .mis_informes_boton_cerrar_sesion,
+    .mis_informes_boton_principal,
+    .mis_informes_boton_accion{
+        display: inline-flex; 
+        align-items: center; 
+        justify-content: center; 
+        min-height: 30px; 
+        padding: 0 16px; 
+        box-sizing: border-box; 
+        border: 1px solid #000000; 
+        border-radius: 8px; 
+        background: #a33b8d; 
+        color: #ffffff; 
+        font-size: 11px; 
+        font-weight: 700; 
+        text-decoration: none; 
+        cursor: pointer; 
+        text-transform: uppercase; 
+    }
+
+    .mis_informes_boton_cabecera_activo{
+        background: #8f2f79; 
+    }
+
+
+
+
+    .mis_informes_usuario{
+        margin: 0; 
+        color: #a33b8d; 
+        font-size: 13px; 
+        font-weight: 700; 
+        text-transform: uppercase; 
+    }
+
+    .mis_informes_usuario_nombre{
+        color: #a33b8d; 
+    }
+
+
+
+
+    .mis_informes_contenido{
+        width: 100%; 
+        min-height: 610px; 
+        padding: 0 20px 24px 20px; 
+        box-sizing: border-box; 
+        position: relative; 
+    }
+
+
+
+
+    .mis_informes_titulo_principal{
+        margin: 86px 0 52px 0; 
+        color: #a33b8d; 
+        font-size: 34px; 
+        font-weight: 700; 
+        text-align: center; 
+        text-transform: uppercase; 
+    }
+
+
+
+
+    .mis_informes_formulario_busqueda{
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 12px; 
+        flex-wrap: wrap; 
+        margin-bottom: 26px; 
+    }
+
+
+
+
+    .mis_informes_etiqueta_principal{
+        color: #000000; 
+        font-size: 13px; 
+        font-weight: 700; 
+        text-transform: uppercase; 
+    }
+
+
+
+
+    .mis_informes_input_principal{
+        width: 146px; 
+        height: 20px; 
+        padding: 0 8px; 
+        box-sizing: border-box; 
+        border: 2px solid #4b4b4b; 
+        background: #efefef; 
+        color: #444444; 
+        font-size: 12px; 
+        outline: none; 
+    }
+
+    .mis_informes_input_principal::placeholder{
+        color: #777777; 
+    }
+
+
+
+
+    .mis_informes_boton_principal{
+        min-width: 42px; 
+        padding: 0 10px; 
+        font-size: 18px; 
+        line-height: 1; 
+        border-radius: 10px; 
+    }
+
+
+
+
+    .mis_informes_respuesta{
+        margin: 0 0 18px 0; 
+        text-align: center; 
+        font-size: 13px; 
+        font-weight: 700; 
+    }
+
+    .mis_informes_respuesta_ok{
+        color: #0f7a25; 
+    }
+
+
+
+
+    .mis_informes_listado{
+        width: 100%; 
+        max-width: 820px; 
+        margin: 0 auto; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 14px; 
+        padding-bottom: 120px; 
+        box-sizing: border-box; 
+    }
+
+
+
+
+    .mis_informes_sin_registros{
+        margin: 20px 0 0 0; 
+        text-align: center; 
+        font-size: 14px; 
+        font-weight: 700; 
+        color: #555555; 
+    }
+
+
+
+
+    .mis_informes_tarjeta{
+        width: 100%; 
+        padding: 16px 18px; 
+        box-sizing: border-box; 
+        border: 1px solid #8f8f8f; 
+        background: #f7f7f7; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        gap: 16px; 
+        flex-wrap: wrap; 
+    }
+
+
+
+
+    .mis_informes_datos{
+        display: flex; 
+        flex-direction: column; 
+        gap: 8px; 
+    }
+
+    .mis_informes_nombre{
+        margin: 0; 
+        font-size: 20px; 
+        font-weight: 700; 
+        color: #222222; 
+        text-transform: uppercase; 
+    }
+
+    .mis_informes_fecha{
+        margin: 0; 
+        font-size: 12px; 
+        font-weight: 700; 
+        color: #666666; 
+        text-transform: uppercase; 
+    }
+
+
+
+
+    .mis_informes_acciones{
+        display: flex; 
+        align-items: center; 
+        gap: 10px; 
+        flex-wrap: wrap; 
+        justify-content: flex-end; 
+    }
+
+    .mis_informes_accion{
+        margin: 0; 
+    }
+
+
+
+
+    .mis_informes_boton_accion{
+        min-width: 138px; 
+        min-height: 32px; 
+        border-radius: 8px; 
+    }
+
+
+
+
+    
+
+
+
+
+    .mis_informes_logo_inferior{
+        width: 100%; 
+        display: flex; 
+        justify-content: flex-end; 
+        align-items: flex-end; 
+        padding: 0 8px 6px 0; 
+        box-sizing: border-box; 
+        position: absolute; 
+        right: 0; 
+        bottom: 0; 
+    }
+
+
+
+
+    .mis_informes_logo_imagen{
+        width: 170px; 
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
+    }
+
+
+
+
+    @media (max-width: 900px){
+
+        .mis_informes_cabecera_superior{
+            flex-direction: column; 
+            align-items: flex-start; 
+        }
+
+        .mis_informes_cabecera_derecha{
+            margin-left: 0; 
+            justify-content: flex-start; 
+        }
+
+        .mis_informes_titulo_principal{
+            margin-top: 70px; 
+        }
+
+    }
+
+
+
+
+    @media (max-width: 600px){
+
+        .mis_informes_contenedor_principal{
+            width: calc(100% - 10px); 
+            min-height: auto; 
+        }
+
+        .mis_informes_titulo_principal{
+            font-size: 28px; 
+            margin-bottom: 36px; 
+        }
+
+        .mis_informes_formulario_busqueda{
+            flex-direction: column; 
+            gap: 10px; 
+        }
+
+        .mis_informes_tarjeta{
+            flex-direction: column; 
+            align-items: flex-start; 
+        }
+
+        .mis_informes_acciones{
+            width: 100%; 
+            justify-content: flex-start; 
+        }
+
+        .mis_informes_logo_inferior{
+            position: static; 
+            justify-content: center; 
+            padding-top: 50px; 
+        }
+
+        .mis_informes_logo_imagen{
+            width: 140px; 
+        }
+
+        .mis_informes_listado{
+            padding-bottom: 20px; 
+        }
+
+        .mis_informes_contenido{
+            min-height: auto; 
+            padding-bottom: 24px; 
+        }
+
+    }
+
+
+
+
+
+

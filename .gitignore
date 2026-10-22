@@ -1,0 +1,16 @@
+# Credenciales del hosting (usa php/config/config.example.php como plantilla)
+php/config/config.php
+
+# Archivos subidos por los usuarios desde la app
+imagenes/programa/*/*
+!imagenes/programa/*/.gitkeep
+documentos/*/*
+!documentos/*/.gitkeep
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+.claude/

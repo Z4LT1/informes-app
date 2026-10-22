@@ -1,0 +1,138 @@
+/*
+Sitio Web Creado por ITred Spa.
+BPPJ
+*/
+
+/* -------------------------------------------------------------------------------------------------------------
+   ------------------------------------- INICIO ITred Spa login .CSS -------------------------------------------
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* TITULO BODY */
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+
+/* TITULO CONTENEDOR PRINCIPAL */
+
+.login_contenedor_principal{
+    width:100%;
+    max-width:900px;
+    margin:80px auto;
+    text-align:center;
+}
+
+
+/* TITULO BIENVENIDA */
+
+.login_bienvenida_titulo{
+    font-size:28px;
+    margin-bottom:40px;
+    color: #8a2c7c;
+}
+
+
+/* TITULO AREA CENTRAL */
+
+.login_area_central{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+}
+
+
+/* TITULO LOGO */
+
+.login_logo img{
+    width:300px;
+    height: auto;
+}
+
+
+/* TITULO CONTENEDOR FORMULARIO */
+
+.login_contenedor_formulario{
+    border:3px solid #8a2c7c;
+    padding:25px;
+    width:260px;
+    box-sizing:border-box;
+}
+
+
+/* TITULO FORMULARIO */
+
+.login_formulario{
+    width:100%;
+}
+
+
+/* TITULO CAMPO */
+
+.login_grupo_campo{
+    margin-bottom:15px;
+}
+
+
+/* TITULO ETIQUETA */
+
+.login_usuario{
+    display:block;
+    font-size:12px;
+    padding:4px;
+    margin-bottom:5px;
+    color:#8a2c7c;
+    padding-right:75px;
+    font-weight: bold ;
+}
+
+.login_etiqueta{
+    display:block;
+    font-size:12px;
+    padding:4px;
+    margin-bottom:5px;
+    color:#8a2c7c;
+    padding-right: 45px;
+    font-weight: bold ;
+}
+
+
+/* TITULO INPUT */
+
+.login_input{
+    width:100%;
+    padding:8px;
+    border:3px solid #000000;
+    background-color:#8a2c7c; ;
+    box-sizing:border-box;
+    color:white;
+}
+
+
+/* TITULO MENSAJE ERROR */
+
+.login_respuesta{
+    min-height:20px;
+    color:red;
+    margin-bottom:10px;
+}
+
+
+/* TITULO BOTON */
+
+.login_boton{
+    background:#8a2c7c;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    cursor:pointer;
+    font-weight: bold;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------
+   -------------------------------------- FIN ITred Spa login .CSS ---------------------------------------------
+   ------------------------------------------------------------------------------------------------------------- */
